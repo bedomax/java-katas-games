@@ -1,2 +1,1 @@
-# UNIACC-JAVA
-Katas developed in class
+Katas developed with friends about principles SOLID.
