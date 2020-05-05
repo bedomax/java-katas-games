@@ -1,4 +1,4 @@
-package com.uniacc.demo.main;
+package com.uniacc.exercises.main;
 
 public class Rectangle {
     private Integer length;

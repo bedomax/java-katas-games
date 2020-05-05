@@ -11,7 +11,7 @@ public class Device {
 
     public void setBrand(String name) {
         if(!Validation.BrandName(name))
-            throw new NullPointerException(Constants.ERROR);
+            throw new NullPointerException(Constants.DEVICE_ERROR_BRAND);
         this.brand = name;
     }
 

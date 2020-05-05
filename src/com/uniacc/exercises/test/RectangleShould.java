@@ -1,7 +1,7 @@
-package com.uniacc.demo.test;
+package com.uniacc.exercises.test;
 import org.junit.jupiter.api.Test;
 
-import com.uniacc.demo.main.Rectangle;
+import com.uniacc.exercises.main.Rectangle;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

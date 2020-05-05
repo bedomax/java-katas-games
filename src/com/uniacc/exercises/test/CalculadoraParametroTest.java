@@ -1,5 +1,5 @@
-package com.uniacc.demo.test;
-import com.uniacc.demo.main.Calculadora;
+package com.uniacc.exercises.test;
+import com.uniacc.exercises.main.Calculadora;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

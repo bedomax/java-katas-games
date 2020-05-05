@@ -18,9 +18,36 @@ public class App {
             if(opcion.equals("1")){
                 System.out.println("\n| Información Televisión ");
                 System.out.println("| Marca: ");
-                UI.inputTelevisionName(in,television);
-                System.out.println("\n| Ingreso los siguientes datos ");
-                System.out.println("| Marca:"+television.getBrand());
+                UI.inputTelevisionBrand(in,television);
+                System.out.println("| Modelo: ");
+                UI.inputTelevisionModel(in,television);
+                System.out.println("| Pulgadas: ");
+                UI.inputTelevisionInch(in,television);
+                System.out.println("| SmartTV: ");
+                UI.inputTelevisionSmartTv(in,television);
+                System.out.println("| Nombre de TvCable: ");
+                UI.inputTelevisionTvCableName(in,television);
+                System.out.println("| Price: ");
+                UI.inputTelevisionPrice(in,television);
+                System.out.println(television.toString());
+            }
+            if(opcion.equals("2")){
+                System.out.println("\n| Cámara IP ");
+                System.out.println("| Marca: ");
+                UI.inputIPCameraBrand(in,ipcamera);
+                System.out.println("| Código: ");
+                UI.inputIPCameraCode(in,ipcamera);
+                System.out.println("| Modelo: ");
+                UI.inputIPCameraModel(in,ipcamera);
+                System.out.println("| Giro: ");
+                UI.inputIPCameraTurnDegrees(in,ipcamera);
+                System.out.println("| Megapixeles: ");
+                UI.inputIPCameraMegapixeles(in,ipcamera);
+                System.out.println("| Metros Wifi: ");
+                UI.inputIPCameraMetersWifi(in,ipcamera);
+                System.out.println("| Precio: ");
+                UI.inputIPCameraPrice(in,ipcamera);
+                System.out.println(television.toString()+"\n\n");
             }
         }while(!opcion.equals("3"));
         System.out.printf("*** Cerrar Programa *** ");

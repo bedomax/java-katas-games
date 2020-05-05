@@ -32,5 +32,19 @@ public class Constants {
     public static final double IPCAMERA_METERSWIFI_MAX= 14;
     public static final float IPCAMERA_PRICE_MIN= 0;
     public static final float IPCAMERA_PRICE_MAX= 100;
+
+    public static final String DEVICE_ERROR_BRAND= "Error ingrese una marca ejemplo: ABCD";
+    public static final String TELEVISION_ERROR_MODEL= "Error: ingrese una modelo ejemplo: AB1273";
+    public static final String TELEVISION_ERROR_INCH= "Error: ingrese una pulgada de 32 a 55";
+    public static final String TELEVISION_ERROR_SMART_TV= "Error: ingrese si es S ó N";
+    public static final String TELEVISION_ERROR_TVCABLE_NAME= "Error: ingrese un nombre ejemplo: Tvcable (primera mayuscula)";
+    public static final String TELEVISION_ERROR_PRICE= "Error: ingrese un valor de 0 a 1000";
+
+    public static final String IPCAMERA_ERROR_CODE= "Error: ingrese una modelo ejemplo: WRAE421";
+    public static final String IPCAMERA_ERROR_MODEL= "Error: ingrese una modelo ejemplo: Interior abcdeaa";
+    public static final String IPCAMERA_ERROR_TURN_DEGREES= "Error: ingrese un valor de 0 a 360 grados";
+    public static final String IPCAMERA_ERROR_MEGAPIXELES= "Error: ingrese un valor de 5.0 a 16.3";
+    public static final String IPCAMERA_ERROR_METERS_WIFI= "Error: ingrese un valor de 3 a 14";
+    public static final String IPCAMERA_ERROR_PRICE= "Error: ingrese un valor de 0 a 100";
 }
 
