@@ -1,5 +1,4 @@
 package com.uniacc.unit2.test;
-import com.uniacc.unit2.main.Brand;
 import com.uniacc.unit2.main.IPCamera;
 import org.junit.*;
 import static org.junit.Assert.*;

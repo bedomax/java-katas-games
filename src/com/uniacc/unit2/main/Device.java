@@ -2,20 +2,29 @@ package com.uniacc.unit2.main;
 
 public class Device {
 
-//    private Brand brand;
-//    private float price;
+    private String brand;
+    private double price;
 
-//    public Device(){
-////        brand = new Brand();
-////        this.price = 0;
-//    }
-////
-//    public boolean saveBrand(String brand) {
-//        return this.brand.save(brand);
-//    }
-//
-//    private boolean validateNameBrand(String brand){
-//        return true;
-//    }
+    public Device(){
+        this.price = 0;
+    }
+
+    public void setBrand(String name) {
+        if(!Validation.BrandName(name))
+            throw new NullPointerException(Constants.ERROR);
+        this.brand = name;
+    }
+
+    public String getBrand(){
+        return this.brand;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    public double getPrice(){
+        return price;
+    }
 
 }

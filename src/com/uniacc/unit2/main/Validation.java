@@ -21,6 +21,35 @@ public final class Validation {
         return valid;
     }
 
+    public static  boolean TelevisionInch(int num) {
+        boolean valid;
+        valid= (num>Constants.TELEVISION_INCH_MIN &&
+                num <Constants.TELEVISION_INCH_MAX)? true :false;
+        return valid;
+    }
+
+    public static  boolean TelevisionSmartTV(String option) {
+        boolean valid;
+        String pattern = Constants.YES_OR_NO_PATTERN;
+        valid = option.matches(pattern);
+        return valid;
+    }
+
+    public static  boolean TelevisionTvCableName(String name) {
+        boolean valid;
+        String first = name.substring(0,1);
+        valid = first.matches("[A-Z]{1}")
+                && name.length() <= 8;
+        return valid;
+    }
+
+    public static  boolean TelevisionPrice(double price) {
+        boolean valid;
+        valid= (price>Constants.TELEVISION_PRICE_MIN &&
+                price <=Constants.TELEVISION_PRICE_MAX)? true :false;
+        return valid;
+    }
+
     public static  boolean IPCameraModelName(String name){
         //String pattern_name = "([\\SInterior])";
         boolean valid = false;
@@ -35,6 +64,34 @@ public final class Validation {
     public static boolean IPCameraCode(String code){
         boolean valid = false;
         valid = validIPCameraCodeInParts(code);
+        return valid;
+    }
+
+    public static boolean IPCameraTurnDegrees(int num){
+        boolean valid = false;
+        valid = (num>=Constants.IPCAMERA_DEGREES_MIN &&
+                num <=Constants.IPCAMERA_DEGREES_MAX)? true :false;
+        return valid;
+    }
+
+    public static boolean IPCameraMegapixels(double num){
+        boolean valid = false;
+        valid = (num>=Constants.IPCAMERA_MEGAPIXELES_MIN &&
+                num <=Constants.IPCAMERA_MEGAPIXELES_MAX)? true :false;
+        return valid;
+    }
+
+    public static boolean IPCameraMetersWifi(double num){
+        boolean valid = false;
+        valid = (num>=Constants.IPCAMERA_METERSWIFI_MIN &&
+                num <=Constants.IPCAMERA_METERSWIFI_MAX)? true :false;
+        return valid;
+    }
+
+    public static  boolean IPCameraPrice(double price) {
+        boolean valid;
+        valid= (price>Constants.IPCAMERA_PRICE_MIN &&
+                price <=Constants.IPCAMERA_PRICE_MAX)? true :false;
         return valid;
     }
 

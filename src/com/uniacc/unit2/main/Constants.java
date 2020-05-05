@@ -1,8 +1,6 @@
 package com.uniacc.unit2.main;
 
 public class Constants {
-    public static final String MODEL_TYPE_TELEVISION = "TV";
-    public static final String MODEL_TYPE_IP_CAMARA = "IP_CAMARA";
     public static final int BRAND_NUMBERS_LETTERS_IN_NAME = 4;
     public static final String BRAND_PATTERNS_IN_NAME = "[A-Z]{"+BRAND_NUMBERS_LETTERS_IN_NAME+"}";
     public static final String PATTERNS_REPEAT= "^.*(.).*\\1$";
@@ -20,5 +18,19 @@ public class Constants {
     public static final String IP_CAMERA_CODE_PATTERN_NUMBERS = "([0-9][0-9][0-9])";
     public static final int IP_CAMERA_CODE_LENGTH= 7;
     public static final int IP_CAMERA_CODE_NUM_CONSONANTS = 4;
+    public static final int TELEVISION_INCH_MIN= 32;
+    public static final int TELEVISION_INCH_MAX= 55;
+    public static final String YES_OR_NO_PATTERN= "([S,N])";
+    public static final String TRUE_ESP= "S";
+    public static final float TELEVISION_PRICE_MIN= 0;
+    public static final float TELEVISION_PRICE_MAX= 1000;
+    public static final int IPCAMERA_DEGREES_MIN= 0;
+    public static final int IPCAMERA_DEGREES_MAX= 360;
+    public static final double IPCAMERA_MEGAPIXELES_MIN= 5;
+    public static final double IPCAMERA_MEGAPIXELES_MAX= 16.3;
+    public static final double IPCAMERA_METERSWIFI_MIN= 3;
+    public static final double IPCAMERA_METERSWIFI_MAX= 14;
+    public static final float IPCAMERA_PRICE_MIN= 0;
+    public static final float IPCAMERA_PRICE_MAX= 100;
 }
 
