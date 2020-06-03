@@ -74,6 +74,10 @@ public class Bus implements Transport{
         }
     }
 
+    public void boardPassenger(Seat seat){
+        this.seats.add(seat);
+    }
+
     public void downPassenger(int number_seat){
         int pos = this.searchSeat(number_seat);
         this.seats.remove(pos);
@@ -85,7 +89,7 @@ public class Bus implements Transport{
             throw new NullPointerException(Constants.ERROR_MSG_NOT_FOUND_NUMBER_SEAT);
         return this.seats.get(pos);
     }
-    public ArrayList getListSeatsAvailable(){
+    public ArrayList getListSeatsOccupied(){
         return this.getSeats();
     }
 //

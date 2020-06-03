@@ -31,4 +31,30 @@ public final class UI {
         }while(error);
     }
 
+    public static  void inputDestination(Scanner in, Ticket ticket){
+        boolean error;
+        do{
+            try{
+                error = false;
+                ticket.setDestination(in.nextLine());
+            }catch (NullPointerException e){
+                System.out.println(e.getMessage());
+                error = true;
+            }
+        }while(error);
+    }
+
+    public static  void inputCost(Scanner in, Ticket ticket){
+        boolean error;
+        do{
+            try{
+                error = false;
+                ticket.setCost(Integer.parseInt(in.nextLine()));
+            }catch (NullPointerException e){
+                System.out.println(e.getMessage());
+                error = true;
+            }
+        }while(error);
+    }
+
 }

@@ -21,7 +21,7 @@ public class CsvShould {
                         "3;Juan;Valparaiso;400.0\n" +
                         "4;Alberto;Arica;400.0\n";
         Csv csv_format = new Csv();
-        String text_n = csv_format.print(bus.getListSeatsAvailable());
+        String text_n = csv_format.print(bus.getListSeatsOccupied());
         assertEquals(text, text_n);
     }
     @Test
