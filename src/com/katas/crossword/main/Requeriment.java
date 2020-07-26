@@ -1,6 +1,6 @@
 package com.katas.crossword.main;
 
-public interface MatrizRequirements {
+public interface Requeriment {
     public void process(String text);
     public Integer numRow();
     public boolean isPresent();

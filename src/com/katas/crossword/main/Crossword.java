@@ -1,6 +1,6 @@
 package com.katas.crossword.main;
 
-public class Crossword implements MatrizRequirements {
+public class Crossword implements Requeriment {
     private static final String CHAR_EMPTY = "";
     private String text = CHAR_EMPTY;
     private Integer numRow = 0;
@@ -65,6 +65,18 @@ public class Crossword implements MatrizRequirements {
     }
 
     public String printMatriz(){
-        return "";
+        String matriz;
+        matriz = "[";
+        matriz +="\n";
+        int i = 0;
+        for (char[] row : this.matriz){
+            for(int j=0;j<row.length;j++){
+                matriz += row[j]+",";
+            }
+            matriz +="\n";
+            i++;
+        }
+        matriz += "]";
+        return matriz;
     }
 }
