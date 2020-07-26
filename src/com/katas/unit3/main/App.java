@@ -1,5 +1,6 @@
 package com.katas.unit3.main;
 
+import java.io.*;
 import java.util.Scanner;
 
 public class App {
@@ -85,5 +86,19 @@ public class App {
                     break;
             }
         }while(!opcion.equals("9"));
+
+        Writer writer = null;
+        try {
+            writer = new BufferedWriter(new OutputStreamWriter(
+                    new FileOutputStream(Constants.PATH_BACKUP_INFO), "utf-8"));
+            writer.write(csv_format.print(bus.getListSeatsOccupied()));
+        } catch (IOException ex) {
+            // Report
+        } finally {
+            try {
+                writer.close();
+            } catch (Exception ex) {}
+        }
+
     }
 }
