@@ -1,7 +1,6 @@
 package com.katas.crossword.test;
 
 import com.katas.crossword.main.Crossword;
-import com.katas.unit2.main.Device;
 import org.junit.*;
 import static org.junit.Assert.*;
 

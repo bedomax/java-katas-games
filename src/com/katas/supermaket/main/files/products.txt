@@ -1,0 +1,10 @@
+Platano 1kg;1200
+Bebida Coca Cola;1100
+Chocolate Sahne Nuss;2200
+Pan Batido 1kg; 1100
+1 Litro de leche;1500
+Caja de Huevos; 2200
+1 kg de Harina; 1200
+Mermelada; 900
+Empanada de Pino; 1400
+Empanada de Pollo; 1500

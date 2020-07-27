@@ -1,2 +1,0 @@
-4;Eduardo Perez;Providencia;500.0
-5;Cristina Flores;Cerrillos;700.0

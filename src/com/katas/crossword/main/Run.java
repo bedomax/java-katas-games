@@ -1,7 +1,5 @@
 package com.katas.crossword.main;
-import com.katas.unit3.main.Person;
 
-import java.io.*;
 import java.util.Scanner;
 
 public class Run {
